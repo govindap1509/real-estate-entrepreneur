@@ -55,7 +55,7 @@ export default function LearnWithMe() {
           <h2 className="text-3xl md:text-4xl font-bold text-navy mb-4">
             Learn With Me
           </h2>
-          <Separator className="w-16 mx-auto bg-gold h-1 rounded-full" />
+          <Separator className="w-16 mx-auto h-1 rounded-full bg-vivid" />
           <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
             Access real estate knowledge through the format that works best for
             you.
@@ -69,7 +69,7 @@ export default function LearnWithMe() {
               className="text-center hover:shadow-lg transition-shadow border border-border bg-white"
             >
               <CardHeader className="items-center">
-                <div className="text-gold mb-2">{channel.icon}</div>
+                <div className="text-purple-500 mb-2">{channel.icon}</div>
                 <CardTitle className="text-navy">{channel.title}</CardTitle>
                 <CardDescription>{channel.description}</CardDescription>
               </CardHeader>
@@ -77,7 +77,7 @@ export default function LearnWithMe() {
                 <Button
                   render={<a href={channel.link} />}
                   variant="outline"
-                  className="border-gold text-gold hover:bg-gold/10 rounded-full"
+                  className="border-purple-400 text-purple-600 hover:bg-purple-50 rounded-full"
                 >
                   {channel.cta}
                 </Button>

@@ -3,39 +3,48 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 
-const navLinks = [
-  { href: "#about", label: "About" },
-  { href: "#what-i-do", label: "What I Do" },
-  { href: "#learn", label: "Learn" },
-  { href: "#work-with-me", label: "Work With Me" },
-  { href: "#gallery", label: "Gallery" },
-  { href: "#contact", label: "Contact" },
-];
-
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-border">
+      {/* Top info bar */}
+      <div className="bg-navy text-white/80 text-xs py-1.5 px-4 md:px-8 hidden md:flex justify-between items-center">
+        <div className="flex items-center gap-4">
+          <span className="flex items-center gap-1.5">
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+            San Diego, California
+          </span>
+        </div>
+        <div className="flex items-center gap-4">
+          <a href="#" className="hover:text-white transition-colors" aria-label="YouTube">YouTube</a>
+          <a href="#" className="hover:text-white transition-colors" aria-label="LinkedIn">LinkedIn</a>
+        </div>
+      </div>
+
+      {/* Main nav */}
       <div className="max-w-7xl mx-auto flex items-center justify-between px-4 md:px-8 h-16">
-        <a href="#" className="text-xl font-bold tracking-tight text-navy">
-          Govinda<span className="text-gold">P</span>
+        {/* Brand */}
+        <a href="#" className="flex items-center gap-2.5">
+          <div className="w-9 h-9 rounded-lg bg-vivid flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M2 22h20M6 18V8l6-4 6 4v10M10 22v-4h4v4" />
+            </svg>
+          </div>
+          <div className="leading-tight">
+            <span className="text-base font-bold tracking-tight text-navy block">Adni</span>
+            <span className="text-[10px] uppercase tracking-widest text-muted-foreground">Real Estate Investment</span>
+          </div>
         </a>
 
-        {/* Desktop nav */}
-        <div className="hidden md:flex items-center gap-6">
-          {navLinks.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              className="text-sm font-medium text-muted-foreground hover:text-gold transition-colors"
-            >
-              {link.label}
-            </a>
-          ))}
+        {/* Desktop: just CTA */}
+        <div className="hidden md:flex items-center">
           <Button
-            render={<a href="#contact" />}
-            className="bg-gold hover:bg-gold-dark text-white rounded-full px-6"
+            render={<a href="/get-in-touch" />}
+            className="bg-vivid hover:opacity-90 text-white rounded-full px-6"
           >
             Get In Touch
           </Button>
@@ -68,19 +77,16 @@ export default function Navbar() {
       {/* Mobile menu */}
       {mobileOpen && (
         <div className="md:hidden bg-white border-b border-border px-4 pb-4">
-          {navLinks.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              onClick={() => setMobileOpen(false)}
-              className="block py-2 text-sm font-medium text-muted-foreground hover:text-gold transition-colors"
-            >
-              {link.label}
-            </a>
-          ))}
+          <p className="text-xs text-muted-foreground py-2 flex items-center gap-1.5">
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+            San Diego, California
+          </p>
           <Button
-            render={<a href="#contact" onClick={() => setMobileOpen(false)} />}
-            className="w-full mt-2 bg-gold hover:bg-gold-dark text-white rounded-full"
+            render={<a href="/get-in-touch" onClick={() => setMobileOpen(false)} />}
+            className="w-full mt-2 bg-vivid hover:opacity-90 text-white rounded-full"
           >
             Get In Touch
           </Button>

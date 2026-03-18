@@ -35,7 +35,7 @@ export default function CurrentFocus() {
           <h2 className="text-3xl md:text-4xl font-bold text-navy mb-4">
             Current Focus
           </h2>
-          <Separator className="w-16 mx-auto bg-gold h-1 rounded-full" />
+          <Separator className="w-16 mx-auto h-1 rounded-full bg-vivid" />
         </div>
 
         <div className="space-y-6">
@@ -44,7 +44,7 @@ export default function CurrentFocus() {
               key={index}
               className="flex items-start gap-5 bg-white rounded-xl p-6 border border-border shadow-sm"
             >
-              <div className="text-gold flex-shrink-0 mt-0.5">{item.icon}</div>
+              <div className="text-purple-500 flex-shrink-0 mt-0.5">{item.icon}</div>
               <p className="text-foreground text-base md:text-lg font-medium">
                 {item.statement}
               </p>

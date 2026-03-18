@@ -17,7 +17,7 @@ const audiences = [
     ),
     items: ["Syndication opportunities", "Passive income strategies", "Portfolio diversification"],
     cta: "Invest With Me",
-    href: "#contact",
+    href: "/get-in-touch",
   },
   {
     title: "For Partners",
@@ -28,7 +28,7 @@ const audiences = [
     ),
     items: ["Joint ventures", "Development collaborations", "Strategic partnerships"],
     cta: "Partner With Me",
-    href: "#contact",
+    href: "/get-in-touch",
   },
   {
     title: "For Learners",
@@ -53,7 +53,7 @@ export default function WorkWithMe() {
           <h2 className="text-3xl md:text-4xl font-bold text-navy mb-4">
             Work With Me
           </h2>
-          <Separator className="w-16 mx-auto bg-gold h-1 rounded-full" />
+          <Separator className="w-16 mx-auto h-1 rounded-full bg-vivid" />
           <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
             Whether you&apos;re looking to invest, collaborate, or learn —
             there&apos;s a path for you.
@@ -67,7 +67,7 @@ export default function WorkWithMe() {
               className="text-center hover:shadow-lg transition-shadow border border-border bg-white group"
             >
               <CardHeader className="items-center">
-                <div className="text-gold mb-2">{audience.icon}</div>
+                <div className="text-purple-500 mb-2">{audience.icon}</div>
                 <CardTitle className="text-navy">{audience.title}</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
@@ -77,14 +77,14 @@ export default function WorkWithMe() {
                       key={item}
                       className="flex items-center gap-2 text-sm text-muted-foreground"
                     >
-                      <span className="w-1.5 h-1.5 rounded-full bg-gold flex-shrink-0" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-vivid flex-shrink-0" />
                       {item}
                     </li>
                   ))}
                 </ul>
                 <Button
                   render={<a href={audience.href} />}
-                  className="w-full bg-gold hover:bg-gold-dark text-white rounded-full"
+                  className="w-full bg-vivid hover:opacity-90 text-white rounded-full"
                 >
                   {audience.cta}
                 </Button>

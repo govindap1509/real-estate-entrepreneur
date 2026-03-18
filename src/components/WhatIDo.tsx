@@ -63,7 +63,7 @@ export default function WhatIDo() {
           <h2 className="text-3xl md:text-4xl font-bold text-navy mb-4">
             What I Do
           </h2>
-          <Separator className="w-16 mx-auto bg-gold h-1 rounded-full" />
+          <Separator className="w-16 mx-auto h-1 rounded-full bg-vivid" />
           <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
             A multi-sector approach to real estate — from investment and
             transformation to strategic partnerships.
@@ -74,10 +74,10 @@ export default function WhatIDo() {
           {services.map((service) => (
             <Card
               key={service.title}
-              className="group hover:shadow-lg transition-shadow border border-border bg-white"
+              className="group hover:shadow-lg transition-all border border-transparent bg-white hover:border-purple-200"
             >
               <CardHeader>
-                <div className="text-gold mb-3">{service.icon}</div>
+                <div className="text-purple-500 mb-3">{service.icon}</div>
                 <CardTitle className="text-navy text-lg">
                   {service.title}
                 </CardTitle>
@@ -92,7 +92,7 @@ export default function WhatIDo() {
                       key={item}
                       className="flex items-center gap-2 text-sm text-muted-foreground"
                     >
-                      <span className="w-1.5 h-1.5 rounded-full bg-gold flex-shrink-0" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-vivid flex-shrink-0" />
                       {item}
                     </li>
                   ))}
