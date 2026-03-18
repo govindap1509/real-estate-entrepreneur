@@ -16,8 +16,8 @@ export default function Hero() {
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/90 to-navy/40" />
-        <div className="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-navy/30" />
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-900 via-blue-900/85 to-blue-900/30" />
+        <div className="absolute inset-0 bg-gradient-to-t from-blue-900/50 via-transparent to-blue-900/20" />
       </div>
 
       {/* Content grid: text left, DP right */}

@@ -14,7 +14,7 @@ export default function FreeGuidance() {
           className="object-cover"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-navy/85" />
+        <div className="absolute inset-0 bg-blue-900/80" />
       </div>
 
       <div className="relative z-10 max-w-3xl mx-auto text-center">

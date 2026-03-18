@@ -17,7 +17,7 @@ const audiences = [
     ),
     items: ["Syndication opportunities", "Passive income strategies", "Portfolio diversification"],
     cta: "Invest With Me",
-    href: "/get-in-touch",
+    href: "/get-in-touch/invest",
   },
   {
     title: "For Partners",
@@ -28,7 +28,7 @@ const audiences = [
     ),
     items: ["Joint ventures", "Development collaborations", "Strategic partnerships"],
     cta: "Partner With Me",
-    href: "/get-in-touch",
+    href: "/get-in-touch/partner",
   },
   {
     title: "For Learners",

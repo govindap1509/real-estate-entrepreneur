@@ -22,7 +22,7 @@ export default function GetInTouchPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Top bar */}
-      <div className="bg-navy text-white/80 text-xs py-1.5 px-4 md:px-8 flex justify-between items-center">
+      <div className="bg-blue-600 text-white/90 text-xs py-1.5 px-4 md:px-8 flex justify-between items-center">
         <span className="flex items-center gap-1.5">
           <svg xmlns="http://www.w3.org/2000/svg" className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -69,7 +69,7 @@ export default function GetInTouchPage() {
                 className="object-cover"
                 priority
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-navy/70 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 via-transparent to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-6">
                 <p className="text-white font-bold text-xl">Govinda Prasad</p>
                 <p className="text-gradient text-sm font-medium">
