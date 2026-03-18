@@ -49,7 +49,7 @@ const channels = [
 
 export default function LearnWithMe() {
   return (
-    <section id="learn" className="section-padding bg-white">
+    <section id="learn" className="section-padding bg-slate-50">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-14">
           <h2 className="text-3xl md:text-4xl font-bold text-navy mb-4">
@@ -66,7 +66,7 @@ export default function LearnWithMe() {
           {channels.map((channel) => (
             <Card
               key={channel.title}
-              className="text-center hover:shadow-lg transition-shadow border border-border bg-white"
+              className="text-center shadow-sm hover:shadow-lg transition-shadow border border-gray-200 bg-white"
             >
               <CardHeader className="items-center">
                 <div className="text-purple-500 mb-2">{channel.icon}</div>
