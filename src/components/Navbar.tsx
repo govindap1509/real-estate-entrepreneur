@@ -8,23 +8,6 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-border">
-      {/* Top info bar */}
-      <div className="bg-blue-600 text-white/90 text-xs py-1.5 px-4 md:px-8 hidden md:flex justify-between items-center">
-        <div className="flex items-center gap-4">
-          <span className="flex items-center gap-1.5">
-            <svg xmlns="http://www.w3.org/2000/svg" className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-              <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-            </svg>
-            San Diego, California
-          </span>
-        </div>
-        <div className="flex items-center gap-4">
-          <a href="#" className="hover:text-white transition-colors" aria-label="YouTube">YouTube</a>
-          <a href="#" className="hover:text-white transition-colors" aria-label="LinkedIn">LinkedIn</a>
-        </div>
-      </div>
-
       {/* Main nav */}
       <div className="max-w-7xl mx-auto flex items-center justify-between px-4 md:px-8 h-16">
         {/* Brand */}

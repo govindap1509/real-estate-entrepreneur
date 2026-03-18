@@ -5,6 +5,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import GITNav from "@/components/GITNav";
 
 const reasons = [
   {
@@ -98,17 +99,7 @@ export default function InvestPage() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Top bar */}
-      <div className="bg-blue-600 text-white/90 text-xs py-1.5 px-4 md:px-8 flex justify-between items-center">
-        <span className="flex items-center gap-1.5">
-          <svg xmlns="http://www.w3.org/2000/svg" className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-            <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-            <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-          </svg>
-          San Diego, California
-        </span>
-        <a href="/" className="hover:text-white transition-colors font-medium">← Back to Home</a>
-      </div>
+      <GITNav />
 
       {/* Hero section */}
       <div className="relative overflow-hidden bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 text-white">
@@ -121,14 +112,6 @@ export default function InvestPage() {
           />
         </div>
         <div className="relative z-10 max-w-6xl mx-auto px-4 md:px-8 py-20 text-center">
-          <a href="/" className="inline-flex items-center gap-2 mb-8 opacity-80 hover:opacity-100 transition-opacity">
-            <div className="w-8 h-8 rounded-lg bg-vivid flex items-center justify-center">
-              <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M2 22h20M6 18V8l6-4 6 4v10M10 22v-4h4v4" />
-              </svg>
-            </div>
-            <span className="text-sm font-semibold tracking-wide">Adni Real Estate Investment</span>
-          </a>
           <div className="inline-block mb-6 px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-sm font-medium tracking-wide">
             💼 Investment Opportunity
           </div>

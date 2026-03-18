@@ -5,6 +5,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import GITNav from "@/components/GITNav";
 
 export default function GetInTouchPage() {
   const [formData, setFormData] = useState({
@@ -21,34 +22,11 @@ export default function GetInTouchPage() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Top bar */}
-      <div className="bg-blue-600 text-white/90 text-xs py-1.5 px-4 md:px-8 flex justify-between items-center">
-        <span className="flex items-center gap-1.5">
-          <svg xmlns="http://www.w3.org/2000/svg" className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-            <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-            <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-          </svg>
-          San Diego, California
-        </span>
-        <a href="/" className="hover:text-white transition-colors font-medium">
-          ← Back to Home
-        </a>
-      </div>
+      <GITNav />
 
       <div className="max-w-6xl mx-auto px-4 md:px-8 py-16">
         {/* Header */}
         <div className="text-center mb-16">
-          <a href="/" className="inline-flex items-center gap-2.5 mb-8">
-            <div className="w-10 h-10 rounded-lg bg-vivid flex items-center justify-center">
-              <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M2 22h20M6 18V8l6-4 6 4v10M10 22v-4h4v4" />
-              </svg>
-            </div>
-            <div className="leading-tight text-left">
-              <span className="text-base font-bold tracking-tight text-navy block">Adni</span>
-              <span className="text-[10px] uppercase tracking-widest text-muted-foreground">Real Estate Investment</span>
-            </div>
-          </a>
           <h1 className="text-4xl md:text-5xl font-bold text-navy mb-4">
             Let&apos;s Build Something Together
           </h1>

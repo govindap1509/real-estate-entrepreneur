@@ -41,7 +41,7 @@ const audiences = [
     ),
     items: ["Structured courses", "Mentorship programs", "Community access"],
     cta: "Start Learning",
-    href: "#learn",
+    href: "/get-in-touch/learn",
   },
 ];
 

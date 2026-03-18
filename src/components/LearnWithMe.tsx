@@ -70,8 +70,8 @@ export default function LearnWithMe() {
             >
               <CardHeader className="items-center">
                 <div className="text-purple-500 mb-2">{channel.icon}</div>
-                <CardTitle className="text-navy">{channel.title}</CardTitle>
-                <CardDescription>{channel.description}</CardDescription>
+                <CardTitle className="text-gradient">{channel.title}</CardTitle>
+                <CardDescription className="text-gray-700">{channel.description}</CardDescription>
               </CardHeader>
               <CardContent>
                 <Button
